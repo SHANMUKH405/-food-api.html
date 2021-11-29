@@ -1,0 +1,506 @@
+/*created by shanmukh*/
+
+
+* {
+-webkit-tap-highlight-color:transparent;
+tap-highlight-color:transparent;
+-webkit-box-sizing:border-box;
+-webkit-user-select:none;
+scroll-behavior:smooth;
+box-sizing:border-box;
+user-select:none;
+}
+
+body {
+
+}
+
+#wrapper {
+background:#FFFDED;
+display:inline-block;
+position:absolute ;
+overflow-x:hidden ;
+overflow-y:scroll ;
+height:100vh;
+width:100vw;
+left:0;
+top:0;
+}
+
+#sidebar_icon {
+position:relative ;
+top:2.7vw;
+left:15px;
+width:30px;
+height:30px;
+}
+
+#food_icon {
+position:relative ;
+float:right ;
+top:2.5vw;
+right:4vw;
+width:35px;
+height:35px;
+}
+
+#cart_icon {
+position:relative ;
+float:right ;
+top:3vw;
+right:7vw;
+width:32px;
+height:32px;
+}
+
+#name {
+position:relative ;
+left:15px;
+font-weight:600;
+font-family: 'Montserrat', sans-serif;
+font-size:1.4rem;
+top:33px;
+color:#252627;
+}
+
+#desc {
+position:relative ;
+left:15px;
+font-weight:400;
+font-family: 'Montserrat', sans-serif;
+font-size:0.9rem;
+top:42px;
+color:#252627;
+}
+
+#search_bar {
+position:relative ;
+top:75px;
+width:85%;
+left:15px;
+height:42px;
+border-radius:16px;
+border:none;
+outline:none;
+text-indent:15px;
+font-family: 'Rubik', sans-serif;    
+font-weight:400;
+background:#FFE4C8;
+font-size:0.9rem;
+color:#252627;
+}
+
+#scroller_image {
+display:flex;
+top:100px;
+position:relative ;
+height:190px;
+width:100vw;
+overflow:scroll ;
+}
+
+.nav_image {
+position:relative ;
+width:80%;
+height:100%;
+margin-left:15px;
+border-radius:20px;
+}
+
+#label_1 {
+position:relative ;
+font-weight:500;
+font-family: 'Montserrat', sans-serif;
+top:130px;
+font-size:0.87rem;
+left:21px;
+color:#252627;
+}
+
+#food_category {
+display:flex;
+top:145px;
+position:relative ;
+height:60px;
+width:100vw;
+overflow:scroll ;
+}
+
+.category_image {
+width:60px;
+height:100%;
+margin-left:10px;
+border-radius:40%;
+}
+
+#label_2 {
+position:relative ;
+font-weight:500;
+font-family: 'Montserrat', sans-serif;
+top:175px;
+font-size:0.87rem;
+left:15px;
+color:#252627;
+}
+
+#product_container_1 {
+position:relative ;
+top:190px;
+height:260px;
+width:100%;
+display:flex;
+overflow-x:scroll ;
+}
+
+.product_card {
+position:relative;
+height:100%;
+width:200px;
+margin-left:20px;
+background:#FFE4C8;
+border-radius:30px;
+}
+
+.image_section {
+position:relative ;
+height:55%;
+width:190px;
+text-align:center ;
+}
+
+.label_section {
+position:relative ;
+top:0;
+height:45%;
+width:190px;
+text-align:center ;
+overflow:scroll ;
+}
+
+.food_image {
+position:relative;
+width:120px;
+height:120px;
+z-index:999;
+margin:0;
+}
+
+.food_name {
+position:relative ;
+top:5px;
+color:#100007;
+font-family: 'Rubik', sans-serif;
+font-weight:400;
+font-size:0.8rem;
+}
+
+.review {
+position:relative ;
+top:10px;
+color:#F07001;
+font-size:0.9rem;
+}
+
+.fa-star {
+padding-left:1.3px;
+}
+
+.food_price {
+position:relative ;
+top:15px;
+color:#100007;
+font-family: 'Rubik', sans-serif;
+font-weight:500;
+font-size:0.8em;
+}
+
+.order_button {
+position:relative ;
+top:22px;
+color:#100007;
+font-family: 'Rubik', sans-serif;
+font-weight:400;
+font-size:0.87rem;
+width:70%;
+left:15%;
+height:20px;
+background:#FFB566;
+border-radius:10px;
+}
+
+.product_card:hover {
+border:2px solid #C36500;
+}
+
+.product_card:active {
+transform:scale(0.981);
+}
+
+.category_image:active {
+transform:scale(0.981);
+}
+
+.category_image:hover {
+border:2px solid #C36500;
+}
+
+#label_3 {
+position:relative ;
+font-weight:500;
+font-family: 'Montserrat', sans-serif;
+top:220px;
+font-size:0.87rem;
+left:21px;
+color:#252627;
+}
+
+#product_container_2 {
+position:relative ;
+top:230px;
+height:260px;
+width:100%;
+display:flex;
+overflow-x:scroll ;
+}
+
+#less_width_image_1 {
+width:30%;
+}
+
+#less_width_image_2 {
+width:36%;
+}
+
+#label_4 {
+position:relative ;
+font-weight:500;
+font-family: 'Montserrat', sans-serif;
+top:260px;
+font-size:0.87rem;
+left:21px;
+color:#252627;
+}
+
+#product_container_3 {
+position:relative ;
+top:275px;
+width:100%;
+}
+
+.seller_card {
+position:relative ;
+width:90%;
+height:220px;
+border-radius:25px;
+display:flex;
+background:#FFE4C8;
+left:5%;
+margin-bottom:20px;
+}
+
+.seller_image_cnt {
+position:relative ;
+height:100%;
+width:45%;
+left:0;
+}
+
+.seller_desc_cnt {
+position:relative ;
+height:100%;
+width:55%;
+left:0;
+text-align:center ;
+}
+
+.seller_image {
+width:100%;
+height:100%;
+border-top-left-radius:25px;
+border-bottom-left-radius:25px;
+}
+
+.shop_name {
+position:relative ;
+font-weight:500;
+font-family: 'Rubik', sans-serif;
+top:10px;
+font-size:0.8rem;
+color:#252627;
+}
+
+.seller_review {
+position:relative ;
+color:#F07001;
+top:20px;
+font-size:0.85rem;
+}
+
+.open_at {
+position:relative ;
+font-weight:400;
+font-family: 'Rubik', sans-serif;
+top:35px;
+font-size:0.72rem;
+color:#252627;
+}
+
+.close_at {
+position:relative ;
+font-weight:400;
+font-family: 'Rubik', sans-serif;
+top:40px;
+font-size:0.72rem;
+color:#252627;
+}
+
+.address {
+position:relative ;
+font-weight:400;
+font-family: 'Rubik', sans-serif;
+top:50px;
+font-size:0.79rem;
+color:#252627;
+}
+
+.open_shop {
+position:relative ;
+font-weight:400;
+font-family: 'Rubik', sans-serif;
+top:70px;
+font-size:0.85rem;
+color:#252627;
+background:#FFB566;
+width:70%;
+height:20px;
+left:15%;
+border-radius:10px;
+}
+
+.xtra_edits {
+position:relative ;
+top:2px;
+}
+
+#label_5 {
+position:relative ;
+left:15px;
+font-weight:400;
+font-family: 'Rubik', sans-serif;
+top:290px;
+font-size:0.87rem;
+color:#252627;
+}
+
+#ils_img_cnt_1 {
+top:290px;
+position:relative ;
+width:100%;
+height:225px;
+}
+
+#ils_img_1 {
+width:70%;
+height:100%;
+left:10%;
+position:relative ;
+}
+
+#label_6 {
+position:relative ;
+left:15px;
+font-weight:400;
+font-family: 'Rubik', sans-serif;
+top:310px;
+font-size:0.87rem;
+color:#252627;
+}
+
+#ils_img_cnt_2 {
+top:310px;
+position:relative ;
+width:100%;
+height:180px;
+}
+
+#ils_img_2 {
+width:80%;
+height:100%;
+left:6%;
+position:relative ;
+}
+
+#label_7 {
+position:relative ;
+left:15px;
+font-weight:400;
+font-family: 'Rubik', sans-serif;
+top:330px;
+font-size:0.87rem;
+color:#252627;
+}
+
+#ils_img_cnt_3 {
+top:330px;
+position:relative ;
+width:100%;
+height:180px;
+}
+
+#ils_img_3 {
+width:80%;
+height:100%;
+left:6%;
+position:relative ;
+}
+
+#back_to_top {
+position:relative ;
+font-weight:500;
+font-family: 'Rubik', sans-serif;
+top:380px;
+font-size:0.87rem;
+color:#252627;
+width:100%;
+height:40px;
+text-align:center ;
+font-size:1.05rem;
+background:#FFB566;
+border-top-left-radius:25px;
+border-top-right-radius:25px;
+}
+
+#label_8 {
+position:relative ;
+left:15px;
+font-weight:400;
+font-family: 'Rubik', sans-serif;
+top:350px;
+font-size:0.87rem;
+color:#252627;
+}
+
+#offer_image {
+background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMa9mNxVG3EASbr6NrfgCdZ3iBfdSmCydxgA&usqp=CAU");
+top:360px;
+width:90%;
+height:200px;
+position:relative ;
+background-size:cover;
+background-repeat:no-repeat ;
+left:5%;
+border-radius:20px;
+}
+
+#btn {
+position:relative ;
+top:5px;
+text-decoration:none;
+color:#252627;
+}
+
+footer{
+	background  color: black;
+	color: white;
+	padding: 30px;
+}
